@@ -1,36 +1,36 @@
 Architectures: amd64 arm64 all
 Codename: stable
 Components: main
-Date: Fri, 28 Aug 2026 18:51:59 +0000
+Date: Fri, 28 Aug 2026 18:52:19 +0000
 Description: yukippa - AOSC OS user repository
 Label: yukippa
 Origin: yukippa
 Suite: stable
 MD5Sum:
  bd5d653f84477331d5a4d4df69eaead2             2410 main/binary-amd64/Packages
- b78e3ac505c0979b59047d6f933cbae0             1321 main/binary-amd64/Packages.gz
+ fdd16425f02cb901618c8c115ac04dd8             1321 main/binary-amd64/Packages.gz
  764b03ab24e7bc195f3451d845af8f4e             1328 main/binary-amd64/Packages.xz
  4ada7992e48f35ae9e7cab48fcccdf21             2410 main/binary-arm64/Packages
- fc82bca221156e35defd05dfdb3d7fd2             1314 main/binary-arm64/Packages.gz
+ d59ecdf8e372864802a5881aa51a4221             1314 main/binary-arm64/Packages.gz
  24ebc90f7f9efb5e4d1d79346e4064ac             1328 main/binary-arm64/Packages.xz
 SHA1:
  e1e8d0302cd7969d88eaa15baccc52f728919c49             2410 main/binary-amd64/Packages
- fcc35ef13b6e5b0a74eddac52f2bc065358e9387             1321 main/binary-amd64/Packages.gz
+ e6180b359b8eceb32b748b496e4b3443576ba1de             1321 main/binary-amd64/Packages.gz
  0356d9b1f18d2c866a6026c84b3055c87e566429             1328 main/binary-amd64/Packages.xz
  bf76ce3565fad6f968f52cd53aad676507b30b05             2410 main/binary-arm64/Packages
- f10eec93bdb42400543c3cc475801a93c49ac398             1314 main/binary-arm64/Packages.gz
+ 08d8ff99f0922ee63d037ddc10cf6362bf793928             1314 main/binary-arm64/Packages.gz
  be5a6a14d2692516759d78151b2afdbb537bb2ac             1328 main/binary-arm64/Packages.xz
 SHA256:
  98baec8157e603b0323ee36dc2e485a1b75511963e1f05603b7b349b23c21cb4             2410 main/binary-amd64/Packages
- 4e426d114d162bbb560c3c398e46471b38640223513ad98a810ed73ffabd1d60             1321 main/binary-amd64/Packages.gz
+ 4c028eb6ecd1c5d6a4b60d4af4b53da95161df03c6bef60d3521ea04ef03330a             1321 main/binary-amd64/Packages.gz
  adf1208335f3befe0069a171ee3bd363d824d1a2b985ed90abf2d5facf63633a             1328 main/binary-amd64/Packages.xz
  6677d58cd4f28b839e91553a464cc2ddd5f43983e5ccb6bc391cb25f75e9ef1f             2410 main/binary-arm64/Packages
- 0eac242a7a9b6a628ac00bfa9f353da465085dc25626b8f86edf3353748e2f76             1314 main/binary-arm64/Packages.gz
+ 65742a8c1b002ed597b37f68fff3c29e8424deeb6bd4494aea034ead29a3483e             1314 main/binary-arm64/Packages.gz
  0e7a835c7c4471e9adf96d55349f039e0c9611e6b439a2ae2efcf373f3ffd365             1328 main/binary-arm64/Packages.xz
 SHA512:
  6d34d1ab459a3790027384f8af126cab801283505aac3ca4e20ef99861089a38d1879349071616f271cf246d6d0d5e3f6fe2718b0f2867175c49c45288aa3b11             2410 main/binary-amd64/Packages
- 0456f4711426ee5e607c24347ee3268baf1560626b0d8eb157f624c3c03c789f19c9b274ba16063593530b39a5d936c46ed4296423da6c78d2e2b8150a336e29             1321 main/binary-amd64/Packages.gz
+ 7ebc272257a2514d2dbf4500e977d30e9ca52e2547d5fe8a79786eb7b7f18aa85205af8113771c5a6b02a4a46a226d9792b59256c7499ac3cf9abd66d91353fa             1321 main/binary-amd64/Packages.gz
  b1effd4d52d6c2c234940ac1e1f74daf6bfd95be5bee00704b8c8b2ab16f64d78e7b6df9b082589f6e7519bf9a4ff23a0e8e72dd63b38d128d0315758e6b758e             1328 main/binary-amd64/Packages.xz
  d687ac9b4a4bc5725d836a7d2cad0a53c2c8dbe34db7770019d493a8ca6029e2e6586ce47278b2999de582b4c9ce2673e8bb18eadd24b6361c59c8350adddf00             2410 main/binary-arm64/Packages
- 5b8283d828a928ff2dd2593fd5fa3141a35d289d44e8305c55e693c37d0694cc67c5515b5564c50bd75a1c85d70c818184be2ffb9ce8081b82678c0e4dafb598             1314 main/binary-arm64/Packages.gz
+ efbdbec329bd4899c559cc45e0e3c08a3ac96973e6b37a9eaf78c16d07e5022572ca1006cda85f890d4b90f72154482fbd629dea564aaaa8430f7c53bd056092             1314 main/binary-arm64/Packages.gz
  918b5cf7897f3aabf8e554e1ac44a3fccf002f9623a96dabc1b6bd6921e7237593dee487d639c33af4abcee47769ff778e88b5b0c248919015f35f79aeb685c8             1328 main/binary-arm64/Packages.xz
