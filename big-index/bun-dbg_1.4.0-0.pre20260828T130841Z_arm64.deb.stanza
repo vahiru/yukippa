@@ -5,7 +5,7 @@ Section: debug
 Maintainer: AOSC OS Maintainers <maintainers@aosc.io>
 Installed-Size: 158264
 Depends: bun (=1.4.0~pre20260828T130841Z)
-Filename: big/bun-dbg_1.4.0-0~pre20260828T130841Z_arm64.deb
+Filename: big/bun-dbg_1.4.0-0.pre20260828T130841Z_arm64.deb
 Size: 146707324
 MD5sum: a9b6bacd0af66f027f7bf64607805eb2
 SHA1: 97b05ed70fb99c745d7aaf192d31ab00542c97d8

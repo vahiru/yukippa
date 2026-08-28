@@ -70,10 +70,13 @@ def route_incoming(cfg: Config) -> list[Path]:
         big = deb.stat().st_size > cfg.big_threshold_mb * 1024 * 1024
         if big:
             dest_dir = cfg.big
+            # GitHub Releases 会把资产名里的 ~ 净化成 . ，文件名必须与资产名一致
+            name = deb.name.replace("~", ".")
         else:
             dest_dir = cfg.pool / f["Package"][0] / f["Package"]
+            name = deb.name
         dest_dir.mkdir(parents=True, exist_ok=True)
-        dest = dest_dir / deb.name
+        dest = dest_dir / name
         shutil.move(deb, dest)
         print(f"  {deb.name} -> {dest.parent.relative_to(cfg.root)}/ {'(big 通道)' if big else ''}")
         if big:
@@ -235,8 +238,14 @@ def upload_big(cfg: Config) -> None:
     if not files:
         return
     tag = cfg.big_release_tag
-    view = subprocess.run(["gh", "release", "view", tag, "--repo", cfg.github_repo],
-                          capture_output=True)
+    view = subprocess.run(["gh", "release", "view", tag, "--repo", cfg.github_repo,
+                           "--json", "assets", "--jq", ".assets[].name"],
+                          capture_output=True, text=True)
+    existing = set(view.stdout.split()) if view.returncode == 0 else set()
+    files = [f for f in files if f.name not in existing]
+    if not files:
+        print("  big 文件均已在 Releases 上")
+        return
     if view.returncode != 0:
         create = subprocess.run(
             ["gh", "release", "create", tag, "--repo", cfg.github_repo,
