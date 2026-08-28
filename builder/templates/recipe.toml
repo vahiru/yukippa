@@ -1,0 +1,31 @@
+# yukippa 配方：{{NAME}}
+[package]
+name = "{{NAME}}"
+version = "1.0.0"
+revision = 0
+architecture = "amd64"        # amd64 / arm64 / all
+section = "misc"
+description = "一句话描述"
+homepage = ""
+license = ""
+depends = []
+# notes = "写给用户的注意事项，会进 deb 的长描述"
+
+[upstream]
+type = "github-release"       # github-release / none
+repo = "owner/repo"
+tag-strip-prefix = "v"
+
+[[source]]
+url = "https://github.com/owner/repo/releases/download/v${version}/xxx-linux-x64.zip"
+sha256 = ""                   # ./yk build 时会报出实际值
+extract = true
+
+[[install]]
+from = "解压后的相对路径"
+to = "/usr/bin/{{NAME}}"
+mode = "0755"                 # zip 不保留可执行位，必须显式声明
+
+# [[link]]
+# name = "/usr/bin/别名"
+# target = "{{NAME}}"

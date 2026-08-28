@@ -1,0 +1,71 @@
+name: build-publish
+
+on:
+  push:
+    branches: [main]
+    paths: ['recipes/**', 'builder/**', 'yk']
+  workflow_dispatch:
+    inputs:
+      ingest_urls:
+        description: '要收录的 deb URL（空格分隔，留空则重建全部配方）'
+        required: false
+
+# 发布 commit 只触碰 pool/dists/index.html 等，不匹配上面的 paths，
+# 加上 [skip ci] 双保险，不会自我循环触发
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment: publish
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2
+
+      - name: 安装 apt-ftparchive
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq apt-utils
+
+      - name: 导入签名私钥
+        run: echo "${{ secrets.GPG_PRIVATE_KEY }}" | gpg --batch --import
+
+      - name: 检测变更的配方
+        id: changed
+        if: github.event_name == 'push'
+        run: |
+          pkgs=$(git diff --name-only HEAD^ HEAD -- recipes/ | cut -d/ -f2 | sort -u | tr '\n' ' ')
+          echo "pkgs=$pkgs" >> "$GITHUB_OUTPUT"
+
+      - name: 构建 / 收录
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if [ -n "${{ inputs.ingest_urls }}" ]; then
+            ./yk ingest ${{ inputs.ingest_urls }}
+          elif [ -n "${{ steps.changed.outputs.pkgs }}" ]; then
+            ./yk build ${{ steps.changed.outputs.pkgs }}
+          else
+            ./yk build --all
+          fi
+
+      - name: 发布
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: ./yk publish
+
+      - name: 提交并推送
+        run: |
+          git config user.name "yukippa-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add pool dists big-index index.html yukippa-keyring_latest_all.deb 2>/dev/null || true
+          if git diff --cached --quiet; then
+            echo "无变更，跳过提交"
+            exit 0
+          fi
+          git commit -m "publish: 自动发布 [skip ci]"
+          git pull --rebase origin main
+          git push

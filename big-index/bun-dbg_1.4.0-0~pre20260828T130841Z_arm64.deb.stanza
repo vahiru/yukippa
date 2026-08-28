@@ -1,0 +1,17 @@
+Package: bun-dbg
+Architecture: arm64
+Version: 1.4.0~pre20260828T130841Z
+Section: debug
+Maintainer: AOSC OS Maintainers <maintainers@aosc.io>
+Installed-Size: 158264
+Depends: bun (=1.4.0~pre20260828T130841Z)
+Filename: big/bun-dbg_1.4.0-0~pre20260828T130841Z_arm64.deb
+Size: 146707324
+MD5sum: a9b6bacd0af66f027f7bf64607805eb2
+SHA1: 97b05ed70fb99c745d7aaf192d31ab00542c97d8
+SHA256: 6aa6dbe9afba85558789c5e0c36006d4398fc717316a52923329a33570e0e610
+SHA512: 17e62c3e1103a99502d6adb5f5fda4a7aeaa3846f7515bdc1ed9aa09d003bfbb9519454f4e70ee0d61455d19399368e48ec77c25405cf51070aec2865c84c77b
+Description: Debug symbols for bun
+Description-md5:  347a194e25c988ff50b7b03e1d8c91cc
+X-AOSC-Packager: AOSC OS Maintainers <maintainers@aosc.io>
+X-AOSC-Autobuild4-Version: 4.20.0

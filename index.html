@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>yukippa — AOSC OS 用户仓库</title>
+<style>
+:root {
+  --bg: #faf9f7; --fg: #1a1a1a; --muted: #6b6b6b; --card: #ffffff;
+  --accent: #b46ec2; --border: #e4e0da; --code-bg: #f0ede8;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #17161a; --fg: #e8e6e3; --muted: #9a97a0; --card: #201f24;
+    --accent: #cf9ada; --border: #34323a; --code-bg: #2a2830;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--fg);
+  font: 16px/1.65 system-ui, "Noto Sans CJK SC", sans-serif;
+}
+main { max-width: 880px; margin: 0 auto; padding: 3rem 1.25rem 4rem; }
+h1 { font-size: 2.2rem; margin: 0; }
+h1 .yuki { color: var(--accent); }
+.tagline { color: var(--muted); margin: .3rem 0 2rem; }
+h2 { font-size: 1.15rem; margin: 2.2rem 0 .8rem; }
+pre {
+  background: var(--code-bg); border: 1px solid var(--border);
+  border-radius: 8px; padding: .9rem 1.1rem; overflow-x: auto;
+  font-size: .88rem; line-height: 1.5;
+}
+code { font-family: ui-monospace, "Cascadia Code", monospace; }
+.tablewrap { overflow-x: auto; border: 1px solid var(--border); border-radius: 8px; }
+table { border-collapse: collapse; width: 100%; background: var(--card); font-size: .92rem; }
+th, td { text-align: left; padding: .55rem .9rem; border-bottom: 1px solid var(--border); }
+tr:last-child td { border-bottom: none; }
+th { color: var(--muted); font-weight: 600; white-space: nowrap; }
+footer { margin-top: 3rem; color: var(--muted); font-size: .85rem; }
+footer code { word-break: break-all; }
+a { color: var(--accent); }
+</style>
+</head>
+<body>
+<main>
+  <h1><span class="yuki">yukippa</span> ❄</h1>
+  <p class="tagline">AOSC OS 用户仓库 — 收留进不了官方源的好软件 · 共 5 个包 · 更新于 2026-08-29</p>
+
+  <h2>开始使用（只需一次）</h2>
+  <pre><code>curl -fLO https://ppa.072172.xyz/yukippa-keyring_latest_all.deb
+sudo oma install ./yukippa-keyring_latest_all.deb
+sudo oma refresh</code></pre>
+  <p>之后直接 <code>oma install 包名</code>，升级走 <code>oma upgrade</code>，与官方源无异。</p>
+
+  <h2>收录的包</h2>
+  <div class="tablewrap">
+  <table>
+    <thead><tr><th>包名</th><th>版本</th><th>架构</th><th>体积</th><th>描述</th></tr></thead>
+    <tbody>
+<tr><td><code>bun</code></td><td>1.4.0~pre20260828T130841Z</td><td>amd64</td><td>23.3 MB</td><td>Fast all-in-one JavaScript runtime, bundler, test runner, and package manager</td></tr>
+<tr><td><code>bun</code></td><td>1.4.0~pre20260828T130841Z</td><td>arm64</td><td>23.3 MB</td><td>Fast all-in-one JavaScript runtime, bundler, test runner, and package manager</td></tr>
+<tr><td><code>bun-dbg</code></td><td>1.4.0~pre20260828T130841Z</td><td>amd64</td><td>138.6 MB</td><td>Debug symbols for bun</td></tr>
+<tr><td><code>bun-dbg</code></td><td>1.4.0~pre20260828T130841Z</td><td>arm64</td><td>139.9 MB</td><td>Debug symbols for bun</td></tr>
+<tr><td><code>yukippa-keyring</code></td><td>2026.08.29</td><td>all</td><td>0.0 MB</td><td>GPG keyring and apt source configuration for the yukippa repository</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <footer>
+    <p>签名公钥指纹：<code>F64A3D2094D7BAA5CF861F94E05AB9A7849B2AD5</code>（<a href="yukippa.asc">yukippa.asc</a>）</p>
+    <p>仓库源码与贡献：<a href="https://github.com/vahiru/yukippa">github.com/vahiru/yukippa</a></p>
+  </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,21 @@
+# yukippa 仓库全局配置
+[repo]
+origin = "yukippa"
+label = "yukippa"
+suite = "stable"
+codename = "stable"
+component = "main"
+architectures = ["amd64", "arm64"]
+base_url = "https://ppa.072172.xyz"
+github_repo = "vahiru/yukippa"
+maintainer = "vahiru <nekovahiru@gmail.com>"
+
+# GPG 签名密钥指纹（初始化时自动填写）
+signing_key = "F64A3D2094D7BAA5CF861F94E05AB9A7849B2AD5"
+
+# 每个包每架构保留的版本数
+keep_versions = 2
+
+# 超过此体积(MB)的 deb 走 big/ 通道（GitHub Releases + CF 重定向）
+big_threshold_mb = 95
+big_release_tag = "big"

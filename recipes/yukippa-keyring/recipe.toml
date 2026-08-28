@@ -1,0 +1,24 @@
+# yukippa 仓库自举包：公钥 + 源配置，与 oma/apt 深度融合的入口
+[package]
+name = "yukippa-keyring"
+version = "2026.08.29"
+architecture = "all"
+section = "admin"
+description = "GPG keyring and apt source configuration for the yukippa repository"
+homepage = "https://ppa.072172.xyz"
+conffiles = ["/etc/apt/sources.list.d/yukippa.list"]
+notes = """安装后 yukippa 用户仓库即对 oma / apt 可用。
+换钥或迁移源地址时只需升级本包。"""
+
+[upstream]
+type = "none"
+
+[[install]]
+from = "files/yukippa.gpg"
+to = "/usr/share/keyrings/yukippa.gpg"
+mode = "0644"
+
+[[install]]
+from = "files/yukippa.list"
+to = "/etc/apt/sources.list.d/yukippa.list"
+mode = "0644"

@@ -1,0 +1,47 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+Architectures: amd64 arm64 all
+Codename: stable
+Components: main
+Date: Fri, 28 Aug 2026 18:44:33 +0000
+Description: yukippa - AOSC OS user repository
+Label: yukippa
+Origin: yukippa
+Suite: stable
+MD5Sum:
+ 9697ef17228c7c71691fc5a6f1e70526             2410 main/binary-amd64/Packages
+ d0328546eedd2e9a48bc43c59a6c6fac             1316 main/binary-amd64/Packages.gz
+ ff3871c202699e5fde6d344639488291             1324 main/binary-amd64/Packages.xz
+ 80f7289d0b7a78d4e8277adfebd98301             2410 main/binary-arm64/Packages
+ 0ad80615a99c66b4f64d9ac73343336f             1312 main/binary-arm64/Packages.gz
+ d005b059c101a0989831d830a30b8ab3             1328 main/binary-arm64/Packages.xz
+SHA1:
+ 571e32a154fc7b5379e6442975856ccbb0861465             2410 main/binary-amd64/Packages
+ 53c4163a67337871793cbe95da83e502463c0a91             1316 main/binary-amd64/Packages.gz
+ 6658f1a5bfdee5c8704845ecc8cf3c01ab7953d5             1324 main/binary-amd64/Packages.xz
+ c94bd59f093c65e3d986bdaaff3cfc5f3518df88             2410 main/binary-arm64/Packages
+ 59c0159e7f44379e11cbf22ebc4507d33d0d484d             1312 main/binary-arm64/Packages.gz
+ 27ac8fd2d1f1bc081e4d2e7e813e54b4e4be604a             1328 main/binary-arm64/Packages.xz
+SHA256:
+ 66594f2d7ce01523c9f108894fcb161646f709d7753203af82c80374bcf897ba             2410 main/binary-amd64/Packages
+ ee07d8692ad2cfeb79a790156e1dc69db4b2686aaa149c4c56e694eff1393a07             1316 main/binary-amd64/Packages.gz
+ b4c66643ad3b9d5b9b48149f52008cede5a14a846ae08325c60dcbe66f013926             1324 main/binary-amd64/Packages.xz
+ 2cb749ebbba9310998e27b0e99485fb9c1dd01c4d5b4671fc41b879977de16c7             2410 main/binary-arm64/Packages
+ 3ba1a93676076350c44d244e66205227d4b97bd8da1dde9de93449cb7488d172             1312 main/binary-arm64/Packages.gz
+ c29cb3122cae573f72ab1abac81d36266ad4a5938c23f783af06d6dd4c0f5b8c             1328 main/binary-arm64/Packages.xz
+SHA512:
+ a13e10e086c83edee108a515c05a77eab361968127c7e27f6f227f90ad499f8f09cf92e539bb3850632670b0a00941ec4ef60839607fb46753e80e8bd0089a99             2410 main/binary-amd64/Packages
+ 3b1e0fa47ec0232003e36b6be487d45d01c46d23aa16c0539ff27fe26ce3751dafc7d725307b488466634560ca70e5ab3e0eb438f63105380a87e81f4f335487             1316 main/binary-amd64/Packages.gz
+ d754faf8e85b26879aeeecbea48a0dce650748a6cfa4544c5794fc8deacb89480e05e47f32cfdd83f57c15faae9ee2cb1fa9c6a81803cdf46b28cd258197af7d             1324 main/binary-amd64/Packages.xz
+ d1252518e078205ea261b8374afb15ec34109abe0b16d0e0914e922d023beba0e1d6872f38c41dfe54ad6ce4f30a6d3151f4dcc57b898aa544dd68026d9964df             2410 main/binary-arm64/Packages
+ e73d908ea576c607c2b1212644889d555bb9b2f0058efbef39ca4b65ee16216fff3df067a44a77dec45bee39af9230d21d1c17427d1d573ed268a64baa77128f             1312 main/binary-arm64/Packages.gz
+ 01c27b7c8d6cae6a5f60b2f72787e43a6602b5690f32b23c5dc3c4bca15d3a7597850fc6d41b170e9c3f789b638cc832e01bb31e22d69e050dc01f8791462e72             1328 main/binary-arm64/Packages.xz
+-----BEGIN PGP SIGNATURE-----
+
+iJEEARYKADkWIQT2Sj0glNe6pc+GH5TgWrmnhJsq1QUCapHXERsUgAAAAAAEAA5t
+YW51MiwyLjUrMS4xMiwyLDIACgkQ4Fq5p4SbKtXEmQEA7Yb3cRggXErssoNoZUUI
+CKGpFqTY0OTn8PjUdSrv82EA/jGzJSv9rARHZtwnbSyvDLE4X9hv8P27esbVq5pd
+diQJ
+=oLHV
+-----END PGP SIGNATURE-----

@@ -1,0 +1,56 @@
+Package: bun
+Architecture: arm64
+Version: 1.4.0~pre20260828T130841Z
+Essential: no
+Section: devel
+Maintainer: AOSC OS Maintainers <maintainers@aosc.io>
+Installed-Size: 64620
+Depends: glibc (>= 1:2.42-6), icu (>= 74.2)
+Filename: pool/main/b/bun/bun_1.4.0-0~pre20260828T130841Z_arm64.deb
+Size: 24381986
+MD5sum: 0aef7f3a7ea41f94beb730e1dd220f4a
+SHA1: e4f2ac4d06e7a32c1a57d8270aad1d66dfb775cd
+SHA256: 18cdf69cc8feb502fe015369a1f26d47efa08f20ef10fae689f78ffc03abccc0
+SHA512: 909bf164c2e849d126e6e77f86fb87d6abf4b92bda925bc5b433c7c17ef957fd2a4419aec799674138b9617319a56837c18ffe86a5af407bc4ec66f38c8c0383
+Description: Fast all-in-one JavaScript runtime, bundler, test runner, and package manager
+Description-md5: e9ce76539d2eacdb38c16eaeceeaca5f
+X-AOSC-ACBS-Version: 20260823
+X-AOSC-Commit: ffd534d42c
+X-AOSC-Packager: AOSC OS Maintainers <maintainers@aosc.io>
+X-AOSC-Autobuild4-Version: 4.20.0
+
+Package: yukippa-keyring
+Architecture: all
+Version: 2026.08.29
+Priority: optional
+Section: admin
+Maintainer: vahiru <nekovahiru@gmail.com>
+Installed-Size: 1
+Filename: pool/main/y/yukippa-keyring/yukippa-keyring_2026.08.29_all.deb
+Size: 1360
+MD5sum: a14aebccf77730df8f20a09e213b1511
+SHA1: d6361106062e1d21dbcbc966ede7b408e812c5ee
+SHA256: d2c3d2f0c9208e34e7f22680e9336b4666fd39486f2d9a113820447d83b96c67
+SHA512: cf4a64e8a1d437912345b44e689fc7260f13989ee30e48eacf0c12d61382805d29e5ea348afabb5e643e2eb6cdfa5044a8e19a680315b415d69540fe185af459
+Homepage: https://ppa.072172.xyz
+Description: GPG keyring and apt source configuration for the yukippa repository
+ 安装后 yukippa 用户仓库即对 oma / apt 可用。
+ 换钥或迁移源地址时只需升级本包。
+
+Package: bun-dbg
+Architecture: arm64
+Version: 1.4.0~pre20260828T130841Z
+Section: debug
+Maintainer: AOSC OS Maintainers <maintainers@aosc.io>
+Installed-Size: 158264
+Depends: bun (=1.4.0~pre20260828T130841Z)
+Filename: big/bun-dbg_1.4.0-0~pre20260828T130841Z_arm64.deb
+Size: 146707324
+MD5sum: a9b6bacd0af66f027f7bf64607805eb2
+SHA1: 97b05ed70fb99c745d7aaf192d31ab00542c97d8
+SHA256: 6aa6dbe9afba85558789c5e0c36006d4398fc717316a52923329a33570e0e610
+SHA512: 17e62c3e1103a99502d6adb5f5fda4a7aeaa3846f7515bdc1ed9aa09d003bfbb9519454f4e70ee0d61455d19399368e48ec77c25405cf51070aec2865c84c77b
+Description: Debug symbols for bun
+Description-md5:  347a194e25c988ff50b7b03e1d8c91cc
+X-AOSC-Packager: AOSC OS Maintainers <maintainers@aosc.io>
+X-AOSC-Autobuild4-Version: 4.20.0

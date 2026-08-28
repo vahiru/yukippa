@@ -1,0 +1,25 @@
+# yukippa 收录来源追溯记录
+
+[[entry]]
+file = "bun_1.4.0-0~pre20260828T130841Z_amd64.deb"
+source = "https://mirrors.ustc.edu.cn/anthon/debs/pool/bun-1.4.0/main/b/bun_1.4.0-0~pre20260828T130841Z_amd64.deb"
+sha256 = "86d6936b9445009330a6ff81656691b9fb40c9450bdfdc0373d5292cb41942e8"
+date = "2026-08-29"
+
+[[entry]]
+file = "bun_1.4.0-0~pre20260828T130841Z_arm64.deb"
+source = "https://mirrors.ustc.edu.cn/anthon/debs/pool/bun-1.4.0/main/b/bun_1.4.0-0~pre20260828T130841Z_arm64.deb"
+sha256 = "18cdf69cc8feb502fe015369a1f26d47efa08f20ef10fae689f78ffc03abccc0"
+date = "2026-08-29"
+
+[[entry]]
+file = "bun-dbg_1.4.0-0~pre20260828T130841Z_amd64.deb"
+source = "https://mirrors.ustc.edu.cn/anthon/debs/pool/bun-1.4.0/main/b/bun-dbg_1.4.0-0~pre20260828T130841Z_amd64.deb"
+sha256 = "d175f185c9ba011f3c5a42ac33c9a2087f826051dca167e577a79baf26a0e7da"
+date = "2026-08-29"
+
+[[entry]]
+file = "bun-dbg_1.4.0-0~pre20260828T130841Z_arm64.deb"
+source = "https://mirrors.ustc.edu.cn/anthon/debs/pool/bun-1.4.0/main/b/bun-dbg_1.4.0-0~pre20260828T130841Z_arm64.deb"
+sha256 = "6aa6dbe9afba85558789c5e0c36006d4398fc717316a52923329a33570e0e610"
+date = "2026-08-29"
