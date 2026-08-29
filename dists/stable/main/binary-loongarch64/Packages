@@ -1,0 +1,17 @@
+Package: yukippa-keyring
+Architecture: all
+Version: 2026.08.29
+Priority: optional
+Section: admin
+Maintainer: vahiru <nekovahiru@gmail.com>
+Installed-Size: 1
+Filename: pool/main/y/yukippa-keyring/yukippa-keyring_2026.08.29_all.deb
+Size: 1360
+MD5sum: a14aebccf77730df8f20a09e213b1511
+SHA1: d6361106062e1d21dbcbc966ede7b408e812c5ee
+SHA256: d2c3d2f0c9208e34e7f22680e9336b4666fd39486f2d9a113820447d83b96c67
+SHA512: cf4a64e8a1d437912345b44e689fc7260f13989ee30e48eacf0c12d61382805d29e5ea348afabb5e643e2eb6cdfa5044a8e19a680315b415d69540fe185af459
+Homepage: https://ppa.072172.xyz
+Description: GPG keyring and apt source configuration for the yukippa repository
+ 安装后 yukippa 用户仓库即对 oma / apt 可用。
+ 换钥或迁移源地址时只需升级本包。
