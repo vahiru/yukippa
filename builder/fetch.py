@@ -3,6 +3,8 @@
 import hashlib
 import shutil
 import tarfile
+import time
+import urllib.error
 import urllib.request
 import zipfile
 from pathlib import Path
@@ -30,8 +32,16 @@ def download(url: str, cache_dir: Path, expected_sha256: str | None = None) -> P
     print(f"  下载 {url}")
     tmp = dest.with_suffix(dest.suffix + ".part")
     req = urllib.request.Request(url, headers={"User-Agent": "yukippa-yk/1.0"})
-    with urllib.request.urlopen(req) as resp, open(tmp, "wb") as f:
-        shutil.copyfileobj(resp, f)
+    for attempt in range(1, 4):
+        try:
+            with urllib.request.urlopen(req, timeout=60) as resp, open(tmp, "wb") as f:
+                shutil.copyfileobj(resp, f)
+            break
+        except (urllib.error.URLError, OSError) as e:
+            if attempt == 3:
+                raise FetchError(f"下载失败（已重试 {attempt} 次）: {url}\n  {e}")
+            print(f"  第 {attempt} 次失败（{e}），{attempt * 5}s 后重试")
+            time.sleep(attempt * 5)
     tmp.rename(dest)
 
     if expected_sha256:

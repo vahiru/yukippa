@@ -101,7 +101,7 @@ def validate(r: Recipe) -> None:
         err(f"非法包名 {r.name!r}")
     if not VERSION_RE.match(r.version):
         err(f"非法版本号 {r.version!r}")
-    if r.architecture not in ("amd64", "arm64", "all"):
+    if r.architecture not in ("amd64", "arm64", "loongarch64", "all"):
         err(f"不支持的架构 {r.architecture!r}")
     if not r.description:
         err("缺少 description")
