@@ -1,48 +1,48 @@
 Architectures: amd64 arm64 loongarch64 all
 Codename: stable
 Components: main
-Date: Sat, 29 Aug 2026 15:41:22 +0000
+Date: Sat, 29 Aug 2026 15:41:53 +0000
 Description: yukippa - AOSC OS user repository
 Label: yukippa
 Origin: yukippa
 Suite: stable
 MD5Sum:
  bd5d653f84477331d5a4d4df69eaead2             2410 main/binary-amd64/Packages
- c2b5e001d11d446c1171136042684459             1321 main/binary-amd64/Packages.gz
+ 3dba9e9695d35c2811813b76aca80bff             1321 main/binary-amd64/Packages.gz
  764b03ab24e7bc195f3451d845af8f4e             1328 main/binary-amd64/Packages.xz
  4ada7992e48f35ae9e7cab48fcccdf21             2410 main/binary-arm64/Packages
- 6e4326f5eba1d9e3d5497c96f83c334b             1314 main/binary-arm64/Packages.gz
+ 863747ccfe7aafc5c2c72bff8e000deb             1314 main/binary-arm64/Packages.gz
  24ebc90f7f9efb5e4d1d79346e4064ac             1328 main/binary-arm64/Packages.xz
- e2876138dcea3ab2c7224dd0ff11c422              761 main/binary-loongarch64/Packages
- 1281f9dd86aabb3450ef83a33e9e84cf              589 main/binary-loongarch64/Packages.gz
- ee177c2fe5e438b86a48a5cbbdae839e              636 main/binary-loongarch64/Packages.xz
+ aa5547f1354e114b153bd805d569c2f3             2435 main/binary-loongarch64/Packages
+ fcf7a33b7cc1e33d17b72cbfc2d39c6a             1321 main/binary-loongarch64/Packages.gz
+ ad7f3a57b45b455d153fa3bef4547eba             1336 main/binary-loongarch64/Packages.xz
 SHA1:
  e1e8d0302cd7969d88eaa15baccc52f728919c49             2410 main/binary-amd64/Packages
- 8d9b0327f5dd3af7a881e8633dafde0e1ecc778d             1321 main/binary-amd64/Packages.gz
+ 48bc99831de3aa2c3cab7213164676ed523e4d74             1321 main/binary-amd64/Packages.gz
  0356d9b1f18d2c866a6026c84b3055c87e566429             1328 main/binary-amd64/Packages.xz
  bf76ce3565fad6f968f52cd53aad676507b30b05             2410 main/binary-arm64/Packages
- b87c3e053f7dc14b1c7f68b3f63df0405b0a10ef             1314 main/binary-arm64/Packages.gz
+ ac113a72e9fa9e95d1bc64e5abaed33a18fbfa18             1314 main/binary-arm64/Packages.gz
  be5a6a14d2692516759d78151b2afdbb537bb2ac             1328 main/binary-arm64/Packages.xz
- 378d0115eb641fcf6a264e19d57662b6c206f451              761 main/binary-loongarch64/Packages
- fcda665e80cf3a64a2a48f1de7fbac9567fab1e3              589 main/binary-loongarch64/Packages.gz
- 30c985d2c9c2b3f68c0d019c218a36aa5c1fb07f              636 main/binary-loongarch64/Packages.xz
+ 1283292497420f9697d2895df33d499cb7495e98             2435 main/binary-loongarch64/Packages
+ 247ad9502a44394c1a48b45d26a342fe4cae29f6             1321 main/binary-loongarch64/Packages.gz
+ a9164e4328dfb1901321b365f0f7ee43530050b4             1336 main/binary-loongarch64/Packages.xz
 SHA256:
  98baec8157e603b0323ee36dc2e485a1b75511963e1f05603b7b349b23c21cb4             2410 main/binary-amd64/Packages
- 115d148f03b932403d1e96742d7eab73747f9a7cefb3ac9c9ebc65cf7a820fd4             1321 main/binary-amd64/Packages.gz
+ 735fcfbd3d76c008e70f9cff7e255b1d45bdb4a93f45d1c7e62decca53c589b2             1321 main/binary-amd64/Packages.gz
  adf1208335f3befe0069a171ee3bd363d824d1a2b985ed90abf2d5facf63633a             1328 main/binary-amd64/Packages.xz
  6677d58cd4f28b839e91553a464cc2ddd5f43983e5ccb6bc391cb25f75e9ef1f             2410 main/binary-arm64/Packages
- 8b83f231d4656d4797d03d922deb62f96d9059e85ea4c99bc60735e2c257a7d1             1314 main/binary-arm64/Packages.gz
+ 713c2bf84981816bd78e3f474640bd52261b3ea4624f7d2023c20ee908ed75d6             1314 main/binary-arm64/Packages.gz
  0e7a835c7c4471e9adf96d55349f039e0c9611e6b439a2ae2efcf373f3ffd365             1328 main/binary-arm64/Packages.xz
- 14ab0ff6dfd0a90ee69a589f960eeaf22e6ab868fee5143a4bd42285bc0ea68d              761 main/binary-loongarch64/Packages
- cc5bb85da2fed0a7a75235b7834e2b319f2ba1b0e7c5aa69e2291aaabacf5f24              589 main/binary-loongarch64/Packages.gz
- 98a1d45478fd05c83e78922fabce757dfb96fdf920876e85c3f5b1a401909e33              636 main/binary-loongarch64/Packages.xz
+ 44f9304d69ff5e62145db4a7a926b37d0330afe2f166cd1be286d9382d469487             2435 main/binary-loongarch64/Packages
+ 65a757e0a45eec29910998500c71b3c807a7ab64ac4150b80ddb55919e099428             1321 main/binary-loongarch64/Packages.gz
+ dc293d92cfe65531d12406855f06f130e73cfe9717b85140ba35280f7ac0db54             1336 main/binary-loongarch64/Packages.xz
 SHA512:
  6d34d1ab459a3790027384f8af126cab801283505aac3ca4e20ef99861089a38d1879349071616f271cf246d6d0d5e3f6fe2718b0f2867175c49c45288aa3b11             2410 main/binary-amd64/Packages
- 69e531e5742d8bceaf14ff81d32a671fbe4e86f57e9dc983ef53356f407a11f6ce60b524f8f61944db355190fbf1373c67308ceaad0c605af24032d4ef70980a             1321 main/binary-amd64/Packages.gz
+ 6232a1f5c33735d426dd0f1aafa6da9b5f140a2e2c21d714732af469929ca32cc33523756f14dc571f5c18ac83ef74fece79799f5723662d9d54584a6136a9af             1321 main/binary-amd64/Packages.gz
  b1effd4d52d6c2c234940ac1e1f74daf6bfd95be5bee00704b8c8b2ab16f64d78e7b6df9b082589f6e7519bf9a4ff23a0e8e72dd63b38d128d0315758e6b758e             1328 main/binary-amd64/Packages.xz
  d687ac9b4a4bc5725d836a7d2cad0a53c2c8dbe34db7770019d493a8ca6029e2e6586ce47278b2999de582b4c9ce2673e8bb18eadd24b6361c59c8350adddf00             2410 main/binary-arm64/Packages
- cb79c4b7fa5fbb5366fcf28860b2c624283494223f0a605858187c1912f7bf6c4fc9064543221ffde186ae874052baf82ac6a083bf5ab47eb75d3555521d3631             1314 main/binary-arm64/Packages.gz
+ 17fc6868f419e26b85bfe2c6f31d81e9b21e4f19f86cc62cad034ae8573c963fb8998b465f9de19135861ad55fc4a777a4cd66e17cb82a69f3764f47e1fd1836             1314 main/binary-arm64/Packages.gz
  918b5cf7897f3aabf8e554e1ac44a3fccf002f9623a96dabc1b6bd6921e7237593dee487d639c33af4abcee47769ff778e88b5b0c248919015f35f79aeb685c8             1328 main/binary-arm64/Packages.xz
- e5f97eef821d342838f7458541a86fb6ecab6ee01bd5ed57f3625141b2d6798ac88b3c05456bdccabd9307219bfdd07ad05e54e33c86f1ba0c4ef168a2d4fd44              761 main/binary-loongarch64/Packages
- 00698075b63336c66f9784b18d82d09ea6acf7e5acba09a9207fc8c4b8b59dabebdd058331b54b4c61d5316ce964753bd62d58d9cb2baf034ba8268df70b1a9f              589 main/binary-loongarch64/Packages.gz
- 553f2faa942f6aeedf951e76fc2d347684c631d3e8e14d40237fa24c5831103afb64c8f8750d6790508236dfa3fa529cd282652e159869c62d7b928075a48367              636 main/binary-loongarch64/Packages.xz
+ 502594caa5deb4beaed4598d149561dd74576030a682597760020990f33b6a7f06bbc5277e0d2fa83a6fbb0b2168aa7b7742055b0d1a3060904baad6ca5f84d9             2435 main/binary-loongarch64/Packages
+ ec6ac7bbd7bf06282776b0ffbc5553530604d25087b9068fc3ccb8ff7212e1558b1651868db8848eb3f7a93a65c3ce1968153b75ae94109f0a33dea816117fed             1321 main/binary-loongarch64/Packages.gz
+ bc383843d28b6874b9ebb88dcd0c360516a626b330eb50966011b1a7786a1b4c47545c93e86e0f7c7c0570a73dd7902c4b1f69af26655b9d510bb09b3b1bd47b             1336 main/binary-loongarch64/Packages.xz

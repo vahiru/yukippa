@@ -23,3 +23,15 @@ file = "bun-dbg_1.4.0-0~pre20260828T130841Z_arm64.deb"
 source = "https://mirrors.ustc.edu.cn/anthon/debs/pool/bun-1.4.0/main/b/bun-dbg_1.4.0-0~pre20260828T130841Z_arm64.deb"
 sha256 = "6aa6dbe9afba85558789c5e0c36006d4398fc717316a52923329a33570e0e610"
 date = "2026-08-29"
+
+[[entry]]
+file = "bun_1.4.0-0~pre20260828T170219Z_loongarch64.deb"
+source = "https://repo.aosc.io/debs/pool/bun-1.4.0/main/b/bun_1.4.0-0~pre20260828T170219Z_loongarch64.deb"
+sha256 = "452b913b48a738025e7d046f203acfef917914fb1fc1c6f716ead19c72224b2b"
+date = "2026-08-29"
+
+[[entry]]
+file = "bun-dbg_1.4.0-0~pre20260828T170219Z_loongarch64.deb"
+source = "https://repo.aosc.io/debs/pool/bun-1.4.0/main/b/bun-dbg_1.4.0-0~pre20260828T170219Z_loongarch64.deb"
+sha256 = "8bd25b458452a31fd2a0a4a6cdc9cff5c24f692d7b9f2d9fb754b10a864b91d6"
+date = "2026-08-29"

@@ -1,3 +1,24 @@
+Package: bun
+Architecture: loongarch64
+Version: 1.4.0~pre20260828T170219Z
+Essential: no
+Section: devel
+Maintainer: AOSC OS Maintainers <maintainers@aosc.io>
+Installed-Size: 52544
+Depends: glibc (>= 1:2.42-6), icu (>= 74.2)
+Filename: pool/main/b/bun/bun_1.4.0-0~pre20260828T170219Z_loongarch64.deb
+Size: 19540676
+MD5sum: d2de48bad2f4bdccf081582dd2d645b2
+SHA1: c30e2c1140b4a728edaeb028a7f57d6a589c5c32
+SHA256: 452b913b48a738025e7d046f203acfef917914fb1fc1c6f716ead19c72224b2b
+SHA512: df7df6c456ddb224f9aabbeec5507e47ebf2b7a3650ce3220b17b98ded2cd3f76e0e39eb16170d19958a366a3e3cb527c8c3dc2b4658ee126664c375c2a1a34d
+Description: Fast all-in-one JavaScript runtime, bundler, test runner, and package manager
+Description-md5: e9ce76539d2eacdb38c16eaeceeaca5f
+X-AOSC-ACBS-Version: 20260823
+X-AOSC-Commit: cb9975d52c8
+X-AOSC-Packager: AOSC OS Maintainers <maintainers@aosc.io>
+X-AOSC-Autobuild4-Version: 4.22.0
+
 Package: yukippa-keyring
 Architecture: all
 Version: 2026.08.29
@@ -15,3 +36,21 @@ Homepage: https://ppa.072172.xyz
 Description: GPG keyring and apt source configuration for the yukippa repository
  安装后 yukippa 用户仓库即对 oma / apt 可用。
  换钥或迁移源地址时只需升级本包。
+
+Package: bun-dbg
+Architecture: loongarch64
+Version: 1.4.0~pre20260828T170219Z
+Section: debug
+Maintainer: AOSC OS Maintainers <maintainers@aosc.io>
+Installed-Size: 112000
+Depends: bun (=1.4.0~pre20260828T170219Z)
+Filename: big/bun-dbg_1.4.0-0.pre20260828T170219Z_loongarch64.deb
+Size: 101058200
+MD5sum: 0adf944fafc78b4b4db07d4cbb4e4836
+SHA1: 180f68f1dac5244c6c978ddf24d8a7d50ae685e4
+SHA256: 8bd25b458452a31fd2a0a4a6cdc9cff5c24f692d7b9f2d9fb754b10a864b91d6
+SHA512: b0c9bda4a736bf3f95baa47e4748e2f82220abdf5abd5121e4f13d0c6d17bdbfe4320d4512f288cf26d1d1ab4945a5bec487e4c7b66e3de806a99cab28f97062
+Description: Debug symbols for bun
+Description-md5:  347a194e25c988ff50b7b03e1d8c91cc
+X-AOSC-Packager: AOSC OS Maintainers <maintainers@aosc.io>
+X-AOSC-Autobuild4-Version: 4.22.0
